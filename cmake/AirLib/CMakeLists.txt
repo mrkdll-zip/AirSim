@@ -29,6 +29,7 @@ add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_sources})
 CommonTargetLink()
 target_link_libraries(${PROJECT_NAME} ${RPC_LIB})
 target_link_libraries(${PROJECT_NAME} MavLinkCom)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBRARIES})
 
 #string(SUBSTRING ${CMAKE_STATIC_LINKER_FLAGS} 9 -1 "BUILD_PLATFORM")
 #find_package(Threads REQUIRED)
