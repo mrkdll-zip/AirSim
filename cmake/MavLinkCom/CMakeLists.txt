@@ -50,7 +50,7 @@ ENDIF()
 
 
 
-add_library(MavLinkCom STATIC ${MAVLINK_SOURCES})
+add_library(MavLinkCom SHARED ${MAVLINK_SOURCES})
 
 CommonTargetLink()
 
