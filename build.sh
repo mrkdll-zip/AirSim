@@ -123,7 +123,7 @@ popd >/dev/null
 mkdir -p AirLib/lib/x64/$folder_name
 mkdir -p AirLib/deps/rpclib/lib
 mkdir -p AirLib/deps/MavLinkCom/lib
-cp $build_dir/output/lib/libAirLib.a AirLib/lib
+cp $build_dir/output/lib/libAirLib.so AirLib/lib
 cp $build_dir/output/lib/libMavLinkCom.a AirLib/deps/MavLinkCom/lib
 cp $build_dir/output/lib/librpc.a AirLib/deps/rpclib/lib/librpc.a
 
