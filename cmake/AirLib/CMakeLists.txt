@@ -23,8 +23,8 @@ file(GLOB_RECURSE ${PROJECT_NAME}_sources
   ${AIRSIM_ROOT}/${PROJECT_NAME}/src/vehicles/multirotor/api/*.cpp
 )
 
-# add_library(${PROJECT_NAME} STATIC ${${PROJECT_NAME}_sources})
-add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_sources})
+add_library(${PROJECT_NAME} STATIC ${${PROJECT_NAME}_sources})
+# add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_sources})
 
 CommonTargetLink()
 target_link_libraries(${PROJECT_NAME} ${RPC_LIB})
